@@ -549,14 +549,14 @@
 
 
 
-                        <form action="https://api.staticforms.xyz/submit" method="post" class="p-5 bg-white">
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="p-5 bg-white needs-validation" novalidate>
                             <input type="hidden" name="accessKey" value="6494d43e-182c-4a30-b7fb-52f5296dac5c"> <!-- Required -->
                             <h2 class="h4 text-black mb-5">Contact Form</h2>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label class="text-black" for="fname">Name</label>
-                                    <input type="text" name="name" id="fname" class="form-control rounded-0">
+                                    <input type="text" name="name" id="fname" class="form-control rounded-0" required>
                                 </div>
                             </div>
 
@@ -564,27 +564,27 @@
 
                                 <div class="col-md-12">
                                     <label class="text-black" for="email">Email</label>
-                                    <input type="email" name="email" id="email" class="form-control rounded-0">
+                                    <input type="email" name="email" id="email" class="form-control rounded-0" required>
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label class="text-black" for="subject">Subject</label>
-                                    <input type="subject" name="subject" id="subject" class="form-control rounded-0">
+                                    <input type="subject" name="subject" id="subject" class="form-control rounded-0" required>
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label class="text-black" for="message">Message</label>
-                                    <textarea name="message" name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Leave your message here..."></textarea>
+                                    <textarea name="message" name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Leave your message here..." required></textarea>
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2">
+                                    <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2" required>
                                 </div>
                             </div>
 
